@@ -1,0 +1,74 @@
+/* allgemeine Formatierung des Dokuments */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tag Formatierung */
+header {
+
+    background-color: aqua;
+    margin: 5px 5px 5px 5px;
+}
+
+/* Klassen(class) Formatierung */
+.überschrift1 {
+    color: green;
+    text-align: center;
+}
+
+/* ID Formatierung */
+#amet {
+    color: blue;
+    font-size: 2rem;
+
+}
+
+#bild1 {
+    border: 1px solid orange;
+    border-radius: 10px;
+}
+
+.card {
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 150px;
+    height: 250px;
+
+    margin: 10%;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: 0.4;
+    z-index: 1;
+    box-shadow: 5px 5px 3px rgba(31, 31, 31, 0.2);
+}
+
+table,
+th,
+td {
+    border: 1px solid #000;
+}
+
+tr:nth-child(odd) {
+    background-color: #d6eeee;
+}
+
+a:link {
+    text-decoration: none;
+    color: orange;
+}
+
+a:hover {
+    color: tomato;
+}
+
+a:visited {
+    color: seagreen;
+}
+
+:invalid {
+    border-color: red;
+}

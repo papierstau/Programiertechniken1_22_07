@@ -1,0 +1,96 @@
+<!-- definiert für den Browser, dass es sich um ein HTML-Dokument handelt -->
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <!-- legt den Zeichensatz für die Webseite fest -->
+    <meta charset="UTF-8">
+    <!-- ist für die Unterstützung von legacy browsern -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- definiert das "Sichtfeld" und die Skalierung beim laden-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bindet die CSS-Datein in das HTML-Dokument ein -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Wird im Browsertab angezeigt -->
+    <title>Erste Seite</title>
+</head>
+
+<body>
+    <!-- definiert den Bereich der Kopfzeile -->
+    <header>
+        <!-- Navigationsmenü -->
+        <nav>
+            <!-- einfacher Link -->
+            <a href="andereSeite.html">Andere Seite</a>
+            <a href="andereSeite2.html">Andere Seite2</a>
+        </nav>
+    </header>
+    <main>
+        <!-- h1-h6 werden für Überschriften verwendet -->
+        <h1 class="überschrift1">Erste Überschrift</h1>
+        <h3>Zweite Überschrift</h3>
+        <h6>Dritte Überschrift</h6>
+
+        <!-- das p steht für einen Paragraphen(Absatz) -->
+        <p>Die <abbr title="Welt Gesundheits Organisation"> WHO </abbr> wurde 1948 gegründet</p>
+
+        <p>Lorem ipsum dolor sit <b id="amet"><i>amet</i></b> consectetur adipisicing elit. <wbr>
+            Dolores vero libero dicta alias in hic blanditiis eius dignissimos illum ducimus,<br>
+            temporibus consectetur voluptas deserunt totam modi at tempore doloremque earum?</p>
+
+        <!-- für Unterstützung von Fremdsprachen z.B. Aussprache oder Übersetzungen -->
+        <ruby>
+            明日 <rp>(</rp>
+            <rt>Ashita</rt>
+            <rp>)</rp>
+        </ruby>
+        <!-- Vorformatierter Text -->
+        <pre>
+            Fest gemauert in der Erden
+            Steht die Form, aus Lehm gebrannt.
+            Heute muß die Glocke werden.
+            Frisch, Gesellen! seyd zur Hand.
+            Von der Stirne heiß
+            Rinnen muß der Schweiß,
+            Soll das Werk den Meister loben!
+            Doch der Segen kommt von oben.</pre>
+
+        <!-- ein Bild als link -->
+        <a href="andereSeite.html"><img src="../img/shutterstock_411748240-c7333d3e70fa9717.webp " id="bild1"
+                alt="ich bin ein Bild" height="25%" width="25%"></a>
+
+        <!-- div dient als Container für Elemente die z.B. zusammengehören -->
+        <div class="container">
+            <div class="card">
+                <!-- definiert den Beginn der Tabelle -->
+                <table>
+                    <!-- Kopfzeile der Tabelle -->
+                    <thead>
+                        <!-- Tabellenreihe -->
+                        <tr>
+                            <!-- Spaltennamen -->
+                            <th scope="col">Name</th>
+                            <th scope="col">Stadt</th>
+                        </tr>
+                    </thead>
+                    <!-- Tabelleninhalt -->
+                    <tbody>
+                        <tr>
+                            <!-- Tabellenzellen -->
+                            <td scope="row">Klaus</td>
+                            <td>Lübeck</td>
+                        </tr>
+                        <tr>
+                            <td>Peter</td>
+                            <td>Kiel</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- einfacher Button -->
+                <button>Button</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
